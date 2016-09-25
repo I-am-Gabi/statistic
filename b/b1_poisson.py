@@ -24,7 +24,7 @@ def validator(l, e, n):
 
 
 def poisson(l, e):
-    for n in range(1, 2000):
+    for n in range(1, 500):
         if validator(l, e, n):
             return n
     return -1
@@ -48,20 +48,19 @@ if __name__ == '__main__':
     # test n = 185
     f.write("\n")
     f.write("\n")
-    f.write(str(validator(values_l[1], 0.001, 184)))
+    f.write(str(validator(values_l[1], 0.001, 184)) + " ")
     f.write(" ")
-    f.write(str(validator(values_l[1], 0.001, 185)))
+    f.write(str(validator(values_l[1], 0.001, 185)) + " ")
 
     # test n = 705
     f.write("\n")
     f.write("\n")
-    f.write(str(validator(values_l[2], 0.001, 704)))
+    f.write(str(validator(values_l[2], 0.001, 704)) + " ")
     f.write(" ")
-    f.write(str(validator(values_l[2], 0.001, 705)))
+    f.write(str(validator(values_l[2], 0.001, 705)) + " ")
 
     # test n = 185
     f.write("\n")
     f.write("\n")
-    f.write(str(validator(values_l[3], 0.001, 1995)))
-    f.write(" ")
-    f.write(str(validator(values_l[3], 0.001, 1996)))
+    f.write(str(validator(values_l[3], 0.001, 1995)) + " ")
+    f.write(str(validator(values_l[3], 0.001, 1996)) + " ")
